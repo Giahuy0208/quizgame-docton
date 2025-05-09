@@ -14,7 +14,7 @@ menubtn.addEventListener("click", () => {
   soundClickMenu.currentTime = 0;
   soundClickMenu.play();
   setTimeout(() => {
-    window.location.href = "../../Game/GAME-Home/index-home.html";
+    window.location.href = "../../index.html";
   }, 500);
 });
 
@@ -30,7 +30,7 @@ playBtn.addEventListener("click", () => {
   clickSound.currentTime = 0;
   clickSound.play();
   setTimeout(() => {
-    window.location.href = "../../Game/GameCODER/game.html";
+    window.location.href = "../../Game/GameLUAT/game3.html";
   }, 1000);
 });
 

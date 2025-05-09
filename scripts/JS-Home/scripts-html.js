@@ -37,7 +37,7 @@ theme1.addEventListener("click", () => {
   clickSound.current = 0;
   clickSound.play();
   setTimeout(() => {
-    window.location.href = "../../Game/GameCODER/index.html"; // thay bằng trang game của bạn
+    window.location.href = "Game/GameCODER/index.html"; // thay bằng trang game của bạn
   }, 500);
 });
 
@@ -46,7 +46,7 @@ theme2.addEventListener("click", () => {
   clickSound.current = 0;
   clickSound.play();
   setTimeout(() => {
-    window.location.href = "../../Game/GameBETU/index2.html";
+    window.location.href = "Game/GameBETU/index2.html";
   }, 500);
 });
 
@@ -55,7 +55,7 @@ theme3.addEventListener("click", () => {
   clickSound.current = 0;
   clickSound.play();
   setTimeout(() => {
-    window.location.href = "../../Game/GameLUAT/index3.html";
+    window.location.href = "Game/GameLUAT/index3.html";
   }, 500);
 });
 
@@ -64,7 +64,7 @@ theme4.addEventListener("click", () => {
   clickSound.current = 0;
   clickSound.play();
   setTimeout(() => {
-    window.location.href = "../../Game/GameQTKD/index4.html";
+    window.location.href = "Game/GameQTKD/index4.html";
   }, 500);
 });
 

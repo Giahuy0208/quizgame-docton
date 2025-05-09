@@ -233,7 +233,7 @@ let currentQuestion = 0;
 let score = 0;
 let lives = 3;
 let timerInterval;
-let bestScore1 = localStorage.getItem("bestScore1") || 0;
+let bestScore3 = localStorage.getItem("bestScore3") || 0;
 let musicMuted = localStorage.getItem("musicMuted") === "true";
 
 // Gán trạng thái nhạc lúc load script
@@ -329,7 +329,7 @@ function checkAnswer(selectedIndex) {
 
 function updateScore() {
   document.getElementById("score").textContent = score;
-  document.querySelector(".best-score span").textContent = bestScore1;
+  document.querySelector(".best-score span").textContent = bestScore3;
 }
 
 function updateLives() {
@@ -346,9 +346,9 @@ function updateLives() {
 }
 
 function endGame() {
-  if (score > bestScore1) {
-    bestScore1 = score;
-    localStorage.setItem("bestScore1", bestScore1);
+  if (score > bestScore3) {
+    bestScore3 = score;
+    localStorage.setItem("bestScore3", bestScore3);
   }
   // Ẩn menu góc phải (nếu menu có class là 'right-menu')
   const iconmenu = document.querySelector(".icon-menu");
