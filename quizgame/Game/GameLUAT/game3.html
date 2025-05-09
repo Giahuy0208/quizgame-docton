@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quiz of Luat Phap</title>
+    <link rel="stylesheet" href="../../stylecss/styleLUAT/style-LUAT.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixellari&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="popup-tutorial hiddenTUT" id="popup-tutorial">
+      <div class="popup-content">
+        <div class="popup-title">
+          Chào mừng người hùng đến với<br /><b>QUIZ OF LAW</b>
+        </div>
+
+        <div class="popup-body">
+          <div class="popup-left">
+            <div class="popup-heading"><b>Luật chơi</b></div>
+            <ul class="popup-rules">
+              <li>
+                Bạn sẽ có <span class="light-content"><b>20s</b></span> cho mỗi
+                một câu hỏi !
+              </li>
+
+              <li>
+                <span class="light-content"><b>Chọn sai</b></span> hoặc
+                <span class="light-content"><b>hết thời gian</b></span> bạn sẽ
+                mất❤️.
+              </li>
+              <li>
+                Đưa ra câu trả lời đúng sẽ được
+                <b><span class="light-content">+1 điểm</span></b
+                >.
+              </li>
+              <li>
+                Mất hết ❤️ =
+                <b><span class="light-content">Game Over!</span></b>
+              </li>
+            </ul>
+          </div>
+          <div class="popup-right">
+            <img
+              src="../../picture/CAPYPARA.png"
+              class="popup-image"
+              alt="Capybara"
+            />
+          </div>
+        </div>
+        <button class="btn-close-tut" id="btn-close-tut">Bắt đầu</button>
+      </div>
+    </div>
+
+    <!--Nút Menu góc phải-->
+    <div id="openQuickMenu" class="quick-button">
+      <img class="icon-menu" src="../../icon/Menu-icon.png" alt="icon" />
+    </div>
+    <!--PHẦN TIM GÓC TRÊN MÀN HÌNH-->
+    <div class="hearts-container">
+      <span class="heart" id="heart1">❤️</span>
+      <span class="heart" id="heart2">❤️</span>
+      <span class="heart" id="heart3">❤️</span>
+    </div>
+
+    <div class="items-more">
+      <!-- đếm ngược thời gian-->
+      <div class="timer">TIME: <span id="time">20</span></div>
+      <!-- đếm ngược thời gian-->
+      <div class="score">SCORE: <span id="score">0</span></div>
+      <!--Ki Luc-->
+      <div class="best-score">BEST: <span id="best-score">0</span></div>
+    </div>
+
+    <div class="title">
+      <h1>QUIZ OF LAW</h1>
+      <div class="question-text">
+        <span class="question-number">Câu hỏi:</span>
+        <p>
+          <!-- Phan cau hoi-->
+        </p>
+      </div>
+      <div class="box-answers">
+        <div class="answers-row">
+          <div class="answer"><!-- phancautl--></div>
+          <div class="answer"><!-- phancautl--></div>
+        </div>
+        <div class="answers-row">
+          <div class="answer"><!-- phancautl--></div>
+          <div class="answer"><!-- phancautl--></div>
+        </div>
+      </div>
+
+      <!--các nuits chuc năng khi chơi xong-->
+      <div class="button-back" style="display: none">
+        <div class="option-button" id="playAgain">Play Again</div>
+        <div class="option-button" id="gotoPlayNow">Home</div>
+        <div class="option-button" id="openSupport">Setting</div>
+      </div>
+    </div>
+    <!-- Popup menu -->
+    <div id="supportMenu" class="support-popup hidden">
+      <div class="menu-content">
+        <div class="titleMenu"><b>QUIZ OF LAW</b></div>
+        <button class="btn-popup" id="toggleMusic">Music On</button>
+        <button class="btn-popup" id="retryQuizMenu">Try Again</button>
+        <button class="btn-popup" id="goHomeMenu">Go Home</button>
+
+        <button class="btn-popup" id="closeMenu">Exit Menu</button>
+      </div>
+    </div>
+    <!--hieuungamthanh-->
+    <audio
+      id="clickforMenu"
+      src="../../effect-sound/click-menu.mp3"
+      preload="auto"
+    ></audio>
+
+    <audio
+      id="clickSound"
+      src="../../effect-sound/click.mp3"
+      preload="auto"
+    ></audio>
+
+    <audio
+      id="hoverSound"
+      src="../../effect-sound/hover.mp3"
+      preload="auto"
+    ></audio>
+    <audio
+      id="hoverEndgame"
+      src="../../effect-sound/hoverendgame.mp3"
+      preload="auto"
+    ></audio>
+    <audio
+      id="bgMusic"
+      src="../../MusicBackground/background-music.mp3"
+      autoplay
+      loop
+    ></audio>
+
+    <audio
+      id="correctSound"
+      src="../../effect-sound/correct.mp3"
+      preload="auto"
+    ></audio>
+
+    <audio
+      id="wrongSound"
+      src="../../effect-sound/wrong.mp3"
+      preload="auto"
+    ></audio>
+
+    <script src="../../scripts/JSLUAT/script-LUAT.js"></script>
+  </body>
+</html>

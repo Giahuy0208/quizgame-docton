@@ -1,0 +1,100 @@
+/* font chu pixel */
+@font-face {
+  font-family: "Fernando08";
+  src: url("../../font/fernando.ttf") format("truetype");
+}
+
+body {
+  background-image: url(../../picture/BETU-BG.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Press Start 2P", cursive;
+}
+.menu-container {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1000;
+}
+.btn-menu:hover {
+  width: 55px;
+  height: 55px;
+  box-shadow: inset -1px -1px 0 #c99c6d, inset 1px 1px 0 #fff0c9,
+    0 6px 0 #5c4033, 0 0 50px rgb(254, 172, 48), 0 0 10px rgb(254, 161, 53);
+  transition: all 0.2s ease;
+}
+.btn-menu {
+  background-color: #ecd993;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  box-shadow: inset -2px -2px 0 #c99c6d, inset 2px 2px 0 #fff0c9,
+    0 6px 0 #5c4033;
+  transition: all 0.2s ease;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.textQuiz {
+  margin: 0;
+  font-size: 100px;
+  display: block;
+}
+
+.textOf {
+  margin-top: 10px;
+  font-size: 60px;
+  display: block;
+}
+.textHistory {
+  margin-top: 20px;
+  font-size: 85px;
+  display: block;
+}
+.title {
+  margin-top: 40px;
+  color: rgb(0, 0, 0);
+  text-shadow: 4px 4px rgb(255, 255, 255), 7px 9px rgb(0, 0, 0);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-name-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.boxbtn {
+  margin-top: 170px;
+}
+#buttonPlay {
+  font-family: "Press Start 2P", cursive;
+  font-size: 30px;
+  color: #4b2e13;
+  background-color: #ecd993;
+  border: 2px solid #8b5e3c;
+  border-radius: 16px;
+  padding: 20px 30px;
+  box-shadow: inset -2px -2px 0 #c99c6d, inset 2px 2px 0 #fff0c9,
+    0 6px 0 #5c4033;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.boxbtn:active {
+  transform: translateY(5px);
+  transition: all 0.2s ease;
+}
+
+#buttonPlay:hover {
+  box-shadow: inset -2px -2px 0 #c99c6d, inset 2px 2px 0 #fff0c9,
+    0 6px 0 #5c4033, 0 0 15px rgb(254, 172, 48), 0 0 30px rgb(254, 161, 53);
+  transform: translateY(-5px);
+  filter: brightness(1.2);
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chọn Nội Dung Chơi</title>
+    <link rel="stylesheet" href="../../stylecss/styleHome/style-home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+   
+    <!-- Thêm âm thanh nhấn nút -->
+    <audio
+
+      id="button-sound"
+      src="../../effect-sound/click-menu.mp3"
+      preload="auto"
+    ></audio>
+    <audio id="hoverMenu" src="../../effect-sound/hoverendgame.mp3"></audio>
+
+    <div id="overlay" class="overlay"></div>
+    <h1>FUNNY QUIZ</h1>
+
+    <div class="main-menu">
+      <button id="chooseThemeBtn"><b>CHỌN CHỦ ĐỀ 🎮 </b></button> <br />
+      <button id="rankingBtn"><b>XẾP HẠNG 🏆</b></button> <br />
+    </div>
+    
+    <!-- Modal Chọn chủ đề -->
+    <div id="themeModal" class="modal">
+      <div class="modal-content">
+        <h2>Chọn chủ đề trò chơi</h2>
+        <ul>
+          <li><button class="theme-option" id="theme2">Trường Đại Học BETU</button></li>
+          <li><button class="theme-option" id="theme1">Công Nghệ Thông Tin</button></li>
+          <li><button class="theme-option" id="theme3">Luật Pháp Việt Nam</button></li>
+          <li><button class="theme-option" id="theme4">Quản Trị Kinh Doanh</button></li>
+        </ul>
+        <button class="close-btn" id="closeTheme">Thoát</button>
+      </div>
+    </div>
+    <!-- Modal Xếp hạng -->
+    <div id="rankingModal" class="modal">
+      <div class="modal-content">   
+        <h2>Bảng xếp hạng</h2>
+        
+        <div class="column-score">
+          <p id="rankingList1">Điểm cao nhất CODE : 0 điểm</p>
+          <p id="rankingList">Điểm cao nhất BETU : 0 điểm</p>
+          <p id="rankingList2">Điểm cao nhất LUẬT : 0 điểm</p>
+          <p id="rankingList3">Điểm cao nhất QTKD : 0 điểm</p>
+        </div>
+        <button class="reset-btn" id="resetRankingBtn">Reset điểm</button>
+        <button class="close-btn" id="closeRanking">Thoát</button>
+      </div>
+    </div>
+
+    <script src="../../scripts/JS-Home/scripts-html.js"></script>
+  </body>
+</html>
