@@ -408,7 +408,7 @@ document.addEventListener("DOMContentLoaded", () => {
     clickSound.currentTime = 0;
     clickSound.play();
     setTimeout(() => {
-      window.location.href = "../../Game/gameCODER/index.html";
+      window.location.href = "../../Game/GameCODER/index.html";
     }, 1000);
   });
 
@@ -454,7 +454,7 @@ document.addEventListener("DOMContentLoaded", () => {
     clickSound.currentTime = 0;
     clickSound.play();
     setTimeout(() => {
-      window.location.href = "../../Game/gameCODER/index.html";
+      window.location.href = "../../Game/GameCODER/index.html";
     }, 1000);
   });
 

@@ -375,7 +375,7 @@ document.addEventListener("DOMContentLoaded", () => {
     clickSound.currentTime = 0;
     clickSound.play();
     setTimeout(() => {
-      window.location.href = "../../Game/gameBETU/index2.html";
+      window.location.href = "../../Game/GameBETU/index2.html";
     }, 1000);
   });
 
